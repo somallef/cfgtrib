@@ -7,10 +7,12 @@ import { PoModule } from '@po-ui/ng-components';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { PoTemplatesModule } from '@po-ui/ng-templates';
+import { TributoListComponent } from './tributos/tributo-list/tributo-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TributoListComponent
   ],
   imports: [
     BrowserModule,

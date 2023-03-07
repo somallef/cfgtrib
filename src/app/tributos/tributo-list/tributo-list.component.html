@@ -1,0 +1,17 @@
+<po-page-dynamic-search
+	p-title="Tributos"
+	(p-quick-search)="buscaRapida($event)"
+	(p-change-disclaimers)="mudaFiltros($event)"
+	[p-filters]="camposFiltroAvancado"
+	(p-advanced-search)="buscaAvancada($event)">
+
+	<po-table
+		[p-height]="500"
+		[p-infinite-scroll]="true"
+		[p-striped]="true"      
+		[p-columns]="colunasDaTabela"
+		[p-items]="itensDaTabela"
+		(p-show-more)="carregarDados()"
+		[p-loading]="carregandoTabela">
+	</po-table>
+</po-page-dynamic-search>
